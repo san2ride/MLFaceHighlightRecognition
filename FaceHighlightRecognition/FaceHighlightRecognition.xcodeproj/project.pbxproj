@@ -11,6 +11,7 @@
 		F72C267B2B97DE450094F68B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72C267A2B97DE450094F68B /* Assets.xcassets */; };
 		F72C267E2B97DE450094F68B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72C267D2B97DE450094F68B /* Preview Assets.xcassets */; };
 		F72C26852B97DE890094F68B /* FaceHighlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72C26842B97DE890094F68B /* FaceHighlightView.swift */; };
+		F72C26872B97E08A0094F68B /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72C26862B97E08A0094F68B /* UIImage+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F72C267A2B97DE450094F68B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F72C267D2B97DE450094F68B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F72C26842B97DE890094F68B /* FaceHighlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceHighlightView.swift; sourceTree = "<group>"; };
+		F72C26862B97E08A0094F68B /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				F72C26842B97DE890094F68B /* FaceHighlightView.swift */,
+				F72C26862B97E08A0094F68B /* UIImage+Extensions.swift */,
 				F72C26762B97DE420094F68B /* FaceHighlightRecognitionApp.swift */,
 				F72C267A2B97DE450094F68B /* Assets.xcassets */,
 				F72C267C2B97DE450094F68B /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72C26872B97E08A0094F68B /* UIImage+Extensions.swift in Sources */,
 				F72C26852B97DE890094F68B /* FaceHighlightView.swift in Sources */,
 				F72C26772B97DE420094F68B /* FaceHighlightRecognitionApp.swift in Sources */,
 			);

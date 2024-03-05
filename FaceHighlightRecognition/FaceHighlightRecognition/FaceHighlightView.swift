@@ -86,7 +86,14 @@ struct FaceHighlightView: View {
             }.padding()
             
             Button("Classify") {
-                
+                self.detectFaces { results in
+                    if let results = results {
+                        if let currentImage = self.currentImage {
+                            // draw rectangles
+                            
+                        }
+                    }
+                }
                 
             }.padding()
             .foregroundColor(Color.white)
