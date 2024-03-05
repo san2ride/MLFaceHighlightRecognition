@@ -51,10 +51,10 @@
 		F72C26752B97DE420094F68B /* FaceHighlightRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				F72C26842B97DE890094F68B /* FaceHighlightView.swift */,
 				F72C26762B97DE420094F68B /* FaceHighlightRecognitionApp.swift */,
 				F72C267A2B97DE450094F68B /* Assets.xcassets */,
 				F72C267C2B97DE450094F68B /* Preview Content */,
-				F72C26842B97DE890094F68B /* FaceHighlightView.swift */,
 			);
 			path = FaceHighlightRecognition;
 			sourceTree = "<group>";
