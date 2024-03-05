@@ -34,13 +34,11 @@ struct FaceHighlightView: View {
         DispatchQueue.global().async {
             try? handler.perform([request])
             
-            guard let observations = request.results as? [VNFaceObservation] else {
+            guard let observations = request.results else {
                 return completion(nil)
             }
-            
             completion(observations)
         }
-        
     }
     
     var body: some View {
@@ -81,8 +79,6 @@ struct FaceHighlightView: View {
                 .frame(width: 100)
                 .background(Color.gray)
                 .cornerRadius(10)
-                
-                
             }.padding()
             
             Button("Classify") {
@@ -90,11 +86,14 @@ struct FaceHighlightView: View {
                     if let results = results {
                         if let currentImage = self.currentImage {
                             // draw rectangles
-                            
+                            self.currentImage =
+                            currentImage.drawOnImage(observations: results)
+                        }
+                        DispatchQueue.main.async {
+                            self.classificationLabel = "Faces: \(results.count)"
                         }
                     }
                 }
-                
             }.padding()
             .foregroundColor(Color.white)
             .background(Color.green)
